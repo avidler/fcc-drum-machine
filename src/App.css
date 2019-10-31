@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 30vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.drum-pad {
+    color: white;
+    font-family: arial;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 3px;
+    width: 120px;
+    height: 60px;
+    background-color: rgba(25,125,125,0.8);
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+#drum-machine {
+  background-color: rgba(100,100,100,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+#drum-pad-wrap {
+  display: grid;
+  grid-template-columns: repeat(9, 60px);
+  grid-template-rows: repeat(3, 60px);
+  grid-gap: 6px 3px;
+}
+
+#Sound1  { grid-area: 1/2/2/4; }
+#Sound2  { grid-area: 1/4/2/6; }
+#Sound3  { grid-area: 1/6/2/8; }
+#Sound4  { grid-area: 2/2/3/4; }
+#Sound5  { grid-area: 2/4/3/6; }
+#Sound6  { grid-area: 2/6/3/8; }
+#Sound7  { grid-area: 3/2/4/4; }
+#Sound8  { grid-area: 3/4/4/6; }
+#Sound9  { grid-area: 3/6/4/8; }
+
+#display{
+  color: white;
+  font-family: arial;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 3px;
+  width: 700px;
+  height: 60px;
+  background-color: rgba(15,185,185,0.9);
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer; }
+
+  .playing {
+    background-color: rgba(75,175,175,0.8);;
+    /*transform: scale(1.08);
+    box-shadow: 0 0 2px 2px yellow; */
+  }
+
+  /*.playing2 {
+    transform: scale(1.2); }*/
